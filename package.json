@@ -1,0 +1,20 @@
+{
+  "name": "pwa-budget-tracking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjcostanzo/pwa-budget-tracking.git"
+  },
+  "author": "rjcostanzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjcostanzo/pwa-budget-tracking/issues"
+  },
+  "homepage": "https://github.com/rjcostanzo/pwa-budget-tracking#readme"
+}
