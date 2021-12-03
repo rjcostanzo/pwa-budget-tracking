@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(71, 71, 71);
     font-size: 120%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -14,7 +14,7 @@ body {
   }
   
   td, th {
-    border: 1px solid #4e4e4e;
+    border: 1px solid #292929;
     text-align: left;
     padding: 8px;
   }
