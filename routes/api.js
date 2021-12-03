@@ -1,34 +1,33 @@
 const router = require("express").Router();
-const Expense = require("../models/expense.js");
+const Transaction = require("../models/transaction.js");
 
-router.post("/api/expense", ({ body }, res) => {
-  Expense.create(body)
-    .then(dbExpense => {
-      res.json(dbExpense);
+router.post("/api/transaction", ({body}, res) => {
+  Transaction.create(body)
+    .then(dbTransaction => {
+      res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(400).json(err);
+      res.status(404).json(err);
     });
 });
 
-router.post("/api/expense/multiple", ({ body }, res) => {
-  Expense.insertMany(body)
-    .then(dbExpense => {
-      res.json(dbExpense);
+router.post("/api/transaction/bulk", ({body}, res) => {
+  Transaction.insertMany(body)
+    .then(dbTransaction => {
+      res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(400).json(err);
+      res.status(404).json(err);
     });
 });
 
-router.get("/api/expense", (req, res) => {
-  Expense.find({})
-    .sort({ date: -1 })
-    .then(dbExpense => {
-      res.json(dbExpense);
+router.get("/api/transaction", (req, res) => {
+  Transaction.find({}).sort({date: -1})
+    .then(dbTransaction => {
+      res.json(dbTransaction);
     })
     .catch(err => {
-      res.status(400).json(err);
+      res.status(404).json(err);
     });
 });
 

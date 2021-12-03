@@ -1,0 +1,8 @@
+{   
+    "name":"pwa-budget-tracking",
+    "short_name":"budget-track",
+    "theme_color":"#1f0301",
+    "background_color":"#080100",
+    "start_url":"/",
+    "display":"standalone"
+}

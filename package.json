@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/rjcostanzo/pwa-budget-tracking/issues"
   },
-  "homepage": "https://github.com/rjcostanzo/pwa-budget-tracking#readme"
+  "homepage": "https://github.com/rjcostanzo/pwa-budget-tracking#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.15",
+    "morgan": "^1.9.1"
+  }
 }

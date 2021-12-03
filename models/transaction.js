@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const expenseSchema = new Schema({
+const transactionSchema = new Schema({
   name: {
     type: String,
     trim: true,
-    required: "Name of Expense: "
+    required: "Name of Transaction: "
   },
   value: {
     type: Number,
@@ -18,6 +18,6 @@ const expenseSchema = new Schema({
   }
 });
 
-const Expense = mongoose.model("Expense", expenseSchema);
+const Transaction = mongoose.model("Transaction", transactionSchema);
 
-module.exports = Expense;
+module.exports = Transaction;
